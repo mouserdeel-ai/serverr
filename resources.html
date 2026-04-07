@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Resources - IF Chemical | Technical Documents & Data Sheets</title>
+  <meta name="description" content="Download polyurethane technical data sheets, MSDS, and product specifications from IF Chemical.">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .resources-hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 120px 0 80px;
+      color: #fff;
+      text-align: center;
+    }
+    .resources-hero h1 { font-size: 48px; font-weight: 700; margin-bottom: 20px; }
+    .resources-hero p { font-size: 20px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+    .resources-section { padding: 80px 0; }
+    .resources-section h2 { font-size: 32px; font-weight: 700; margin-bottom: 40px; text-align: center; }
+
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .filter-tab {
+      padding: 10px 25px;
+      background: #f0f0f0;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .filter-tab:hover, .filter-tab.active {
+      background: #5578ff;
+      color: #fff;
+    }
+
+    .doc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+    .doc-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .doc-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+    .doc-icon {
+      width: 60px; height: 60px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .doc-icon i { font-size: 24px; color: #fff; }
+    .doc-type {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #e8eaff;
+      color: #5578ff;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .doc-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+    .doc-card p { color: #666; font-size: 14px; margin-bottom: 20px; }
+    .doc-meta { font-size: 12px; color: #999; margin-bottom: 15px; }
+    .doc-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: #5578ff;
+      color: #fff;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .doc-download:hover { background: #4765d4; color: #fff; }
+
+    .request-section {
+      background: #f8f9fa;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .request-section h2 { font-size: 28px; font-weight: 700; margin-bottom: 15px; }
+    .request-section p { color: #666; font-size: 16px; margin-bottom: 30px; }
+    .request-btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: #5578ff;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .request-btn:hover { background: #4765d4; color: #fff; }
+
+    .info-section { padding: 80px 0; }
+    .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+    .info-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    }
+    .info-box h3 { font-size: 20px; font-weight: 600; margin-bottom: 15px; }
+    .info-box p { color: #666; line-height: 1.8; margin-bottom: 15px; }
+    .info-list { list-style: none; padding: 0; }
+    .info-list li { padding: 10px 0; color: #555; }
+    .info-list li i { color: #5578ff; margin-right: 10px; }
+
+    @media (max-width: 992px) {
+      .doc-grid { grid-template-columns: repeat(2, 1fr); }
+      .info-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .doc-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">IF Chemical</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li class="dropdown"><a href="#"><span>Applications</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="application-building.html">Building Insulation</a></li>
+              <li><a href="application-coldchain.html">Cold Chain</a></li>
+              <li><a href="application-footwear.html">Footwear</a></li>
+              <li><a href="application-sports.html">Sports Protection</a></li>
+              <li><a href="application-medical.html">Medical</a></li>
+              <li><a href="application-industrial.html">Industrial</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="resources-hero">
+      <div class="container">
+        <h1>Technical Resources</h1>
+        <p>Access product data sheets, safety information, and technical documentation</p>
+      </div>
+    </section>
+
+    <section class="resources-section">
+      <div class="container">
+        <h2>Product Documentation</h2>
+
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All Documents</button>
+          <button class="filter-tab" data-filter="tds">Technical Data Sheets</button>
+          <button class="filter-tab" data-filter="msds">MSDS</button>
+          <button class="filter-tab" data-filter="brochure">Brochures</button>
+        </div>
+
+        <div class="doc-grid">
+          <div class="doc-card" data-category="tds">
+            <div class="doc-icon"><i class="bi bi-file-earmark-text"></i></div>
+            <span class="doc-type">TDS</span>
+            <h3>Rigid PU Foam System R-100</h3>
+            <p>High-performance rigid foam for building insulation and cold storage applications.</p>
+            <div class="doc-meta">Updated: Jan 2026 | PDF | 320 KB</div>
+            <a href="#" class="doc-download"><i class="bi bi-download"></i> Download</a>
+          </div>
+
+          <div class="doc-card" data-category="tds">
+            <div class="doc-icon"><i class="bi bi-file-earmark-text"></i></div>
+            <span class="doc-type">TDS</span>
+            <h3>Flexible PU Foam System F-200</h3>
+            <p>Flexible foam for footwear, cushioning, and impact protection applications.</p>
+            <div class="doc-meta">Updated: Jan 2026 | PDF | 280 KB</div>
+            <a href="#" class="doc-download"><i class="bi bi-download"></i> Download</a>
+          </div>
+
+          <div class="doc-card" data-category="msds">
+            <div class="doc-icon"><i class="bi bi-shield"></i></div>
+            <span class="doc-type">MSDS</span>
+            <h3>Polyol Blend P-500</h3>
+            <p>Safety data sheet including handling, storage, and emergency procedures.</p>
+            <div class="doc-meta">Updated: Dec 2025 | PDF | 150 KB</div>
+            <a href="#" class="doc-download"><i class="bi bi-download"></i> Download</a>
+          </div>
+
+          <div class="doc-card" data-category="msds">
+            <div class="doc-icon"><i class="bi bi-shield"></i></div>
+            <span class="doc-type">MSDS</span>
+            <h3>MDI-Based Isocyanate</h3>
+            <p>Safety data sheet for polymeric MDI products. Includes hazard identification.</p>
+            <div class="doc-meta">Updated: Dec 2025 | PDF | 180 KB</div>
+            <a href="#" class="doc-download"><i class="bi bi-download"></i> Download</a>
+          </div>
+
+          <div class="doc-card" data-category="tds">
+            <div class="doc-icon"><i class="bi bi-file-earmark-text"></i></div>
+            <span class="doc-type">TDS</span>
+            <h3>Memory Foam System M-300</h3>
+            <p>Viscoelastic foam for medical, bedding, and comfort applications.</p>
+            <div class="doc-meta">Updated: Jan 2026 | PDF | 260 KB</div>
+            <a href="#" class="doc-download"><i class="bi bi-download"></i> Download</a>
+          </div>
+
+          <div class="doc-card" data-category="brochure">
+            <div class="doc-icon"><i class="bi bi-book"></i></div>
+            <span class="doc-type">Brochure</span>
+            <h3>Product Overview 2026</h3>
+            <p>Complete product catalog with application guides and technical specifications.</p>
+            <div class="doc-meta">Updated: Jan 2026 | PDF | 5.2 MB</div>
+            <a href="#" class="doc-download"><i class="bi bi-download"></i> Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="request-section">
+      <div class="container">
+        <h2>Can't Find What You Need?</h2>
+        <p>Contact our technical team to request specific documentation or custom specifications.</p>
+        <a href="contact.html" class="request-btn">Request Documentation</a>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-box">
+            <h3>Technical Support</h3>
+            <p>Our technical team is available to help with product selection, formulation development, and processing optimization.</p>
+            <ul class="info-list">
+              <li><i class="bi bi-check-circle"></i>Free product consultation</li>
+              <li><i class="bi bi-check-circle"></i>Custom formulation support</li>
+              <li><i class="bi bi-check-circle"></i>Processing troubleshooting</li>
+              <li><i class="bi bi-check-circle"></i>On-site technical assistance</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h3>Document Requests</h3>
+            <p>For custom TDS/MSDS formats or bulk document requests, please contact us directly.</p>
+            <ul class="info-list">
+              <li><i class="bi bi-check-circle"></i>Custom language versions</li>
+              <li><i class="bi bi-check-circle"></i>Extended technical data</li>
+              <li><i class="bi bi-check-circle"></i>Application guides</li>
+              <li><i class="bi bi-check-circle"></i>Compliance certificates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">IF Chemical</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init();
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.doc-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

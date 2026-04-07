@@ -157,8 +157,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+  height: 100px;
+  margin-right: 12px;
 }
 
 .header .logo h1 {
@@ -774,7 +774,20 @@ section,
 
 .hero h1.hero-title {
   display: block;
-  white-space: nowrap;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  .hero h1.hero-title {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1.hero-title {
+    font-size: 1.5rem;
+    white-space: normal;
+  }
 }
 
 .hero blockquote {

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Products - IF Chemical | Polyurethane Materials</title>
+  <meta name="description" content="Explore our comprehensive range of polyurethane materials including rigid foam, flexible foam, and custom material systems.">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .products-hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 120px 0 80px;
+      color: #fff;
+      text-align: center;
+    }
+    .products-hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .products-hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .product-section {
+      padding: 80px 0;
+    }
+    .product-section:nth-child(even) {
+      background: #f8f9fa;
+    }
+    .product-block {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    .product-block.reverse {
+      flex-direction: row-reverse;
+    }
+    .product-image {
+      flex: 1;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+    .product-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .product-info {
+      flex: 1;
+    }
+    .product-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: #5578ff;
+      color: #fff;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .product-badge.rigid { background: #667eea; }
+    .product-badge.flexible { background: #f5576c; }
+    .product-badge.specialty { background: #11dbcf; }
+    .product-info h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .product-info p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+    .product-specs {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+    .product-specs h4 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 15px;
+    }
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .spec-item i {
+      color: #5578ff;
+    }
+    .spec-item span {
+      font-size: 14px;
+      color: #555;
+    }
+    .product-applications {
+      margin-top: 25px;
+    }
+    .product-applications h4 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: 15px;
+    }
+    .app-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .app-tag {
+      padding: 8px 16px;
+      background: #eee;
+      border-radius: 20px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 80px 0;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-section h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    .cta-section p {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: #fff;
+      color: #5578ff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      color: #4765d4;
+    }
+
+    @media (max-width: 768px) {
+      .product-block {
+        flex-direction: column;
+      }
+      .product-block.reverse {
+        flex-direction: column;
+      }
+      .product-image img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">IF Chemical</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li class="dropdown"><a href="#"><span>Applications</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="application-building.html">Building Insulation</a></li>
+              <li><a href="application-coldchain.html">Cold Chain</a></li>
+              <li><a href="application-footwear.html">Footwear</a></li>
+              <li><a href="application-sports.html">Sports Protection</a></li>
+              <li><a href="application-medical.html">Medical</a></li>
+              <li><a href="application-industrial.html">Industrial</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="products-hero">
+      <div class="container">
+        <h1>Our Products</h1>
+        <p>High-performance polyurethane materials for diverse industrial applications</p>
+      </div>
+    </section>
+
+    <!-- Rigid Foam -->
+    <section id="rigid" class="product-section">
+      <div class="container">
+        <div class="product-block">
+          <div class="product-image">
+            <img src="assets/img/cards-1.jpg" alt="Rigid PU Foam">
+          </div>
+          <div class="product-info" data-aos="fade-up">
+            <span class="product-badge rigid">Rigid Foam</span>
+            <h2>Rigid Polyurethane Foam Systems</h2>
+            <p>Our rigid PU foam provides exceptional thermal insulation with closed-cell structure. It offers outstanding dimensional stability, high compressive strength, and excellent moisture resistance. Available in various densities to meet specific application requirements.</p>
+            <div class="product-specs">
+              <h4>Key Specifications</h4>
+              <div class="spec-grid">
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Density: 28-120 kg/m³</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Thermal Conductivity: 0.018-0.025 W/m·K</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Compressive Strength: 150-500 kPa</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Closed Cell Content: >90%</span></div>
+              </div>
+            </div>
+            <div class="product-applications">
+              <h4>Applications</h4>
+              <div class="app-tags">
+                <span class="app-tag">Building Insulation</span>
+                <span class="app-tag">Cold Storage</span>
+                <span class="app-tag">Pipe Insulation</span>
+                <span class="app-tag">Refrigerated Transport</span>
+                <span class="app-tag">Sandwich Panels</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flexible Foam -->
+    <section id="flexible" class="product-section">
+      <div class="container">
+        <div class="product-block reverse">
+          <div class="product-image">
+            <img src="assets/img/soft-foam-product.png" alt="Flexible PU Foam">
+          </div>
+          <div class="product-info" data-aos="fade-up">
+            <span class="product-badge flexible">Flexible Foam</span>
+            <h2>Flexible Polyurethane Foam Systems</h2>
+            <p>Our flexible PU foam offers superior cushioning, high resilience, and excellent energy absorption. The open-cell structure provides breathability and comfort. Custom formulations available for specific hardness levels and processing methods.</p>
+            <div class="product-specs">
+              <h4>Key Specifications</h4>
+              <div class="spec-grid">
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Density: 15-80 kg/m³</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Hardness: 15-80 Shore A</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Resilience: 30-70%</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Tensile Strength: 80-300 kPa</span></div>
+              </div>
+            </div>
+            <div class="product-applications">
+              <h4>Applications</h4>
+              <div class="app-tags">
+                <span class="app-tag">Footwear Insoles</span>
+                <span class="app-tag">Seat Cushions</span>
+                <span class="app-tag">Helmet Padding</span>
+                <span class="app-tag">Protective Equipment</span>
+                <span class="app-tag">Medical Orthotics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integral Skin Foam -->
+    <section id="integral-skin" class="product-section">
+      <div class="container">
+        <div class="product-block">
+          <div class="product-image">
+            <img src="assets/img/cards-3.jpg" alt="Integral Skin PU Foam">
+          </div>
+          <div class="product-info" data-aos="fade-up">
+            <span class="product-badge specialty">Specialty</span>
+            <h2>Integral Skin Polyurethane Foam</h2>
+            <p>Self-skinning PU foam with dense outer skin and cellular core. Provides smooth, durable surfaces without additional finishing. Ideal for armrests, handles, and components requiring both comfort and structural integrity.</p>
+            <div class="product-specs">
+              <h4>Key Specifications</h4>
+              <div class="spec-grid">
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Skin Thickness: 2-8 mm</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Core Density: 100-400 kg/m³</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Surface Hardness: 60-90 Shore A</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Skin Density: 600-1200 kg/m³</span></div>
+              </div>
+            </div>
+            <div class="product-applications">
+              <h4>Applications</h4>
+              <div class="app-tags">
+                <span class="app-tag">Armrests</span>
+                <span class="app-tag">Handles</span>
+                <span class="app-tag">Steering Wheels</span>
+                <span class="app-tag">Furniture Trim</span>
+                <span class="app-tag">Automotive Interiors</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memory Foam -->
+    <section id="memory" class="product-section">
+      <div class="container">
+        <div class="product-block reverse">
+          <div class="product-image">
+            <img src="assets/img/cards-5.jpg" alt="Memory Foam">
+          </div>
+          <div class="product-info" data-aos="fade-up">
+            <span class="product-badge specialty">Specialty</span>
+            <h2>Viscoelastic Memory Foam</h2>
+            <p>Slow-recovery PU foam that conforms to body shape under pressure and heat. Provides excellent pressure distribution and comfort. Ideal for medical, seating, and premium consumer products.</p>
+            <div class="product-specs">
+              <h4>Key Specifications</h4>
+              <div class="spec-grid">
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Density: 40-100 kg/m³</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Recovery Time: 3-10 seconds</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>ILD: 8-25</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Temperature Sensitive</span></div>
+              </div>
+            </div>
+            <div class="product-applications">
+              <h4>Applications</h4>
+              <div class="app-tags">
+                <span class="app-tag">Mattress Toppers</span>
+                <span class="app-tag">Wheelchair Cushions</span>
+                <span class="app-tag">Medical Padding</span>
+                <span class="app-tag">Ear Cushions</span>
+                <span class="app-tag">Sport Equipment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Systems -->
+    <section id="custom" class="product-section">
+      <div class="container">
+        <div class="product-block">
+          <div class="product-image">
+            <img src="assets/img/factory-2.png" alt="Custom PU Systems">
+          </div>
+          <div class="product-info" data-aos="fade-up">
+            <span class="product-badge">Custom</span>
+            <h2>Custom Polyurethane Systems</h2>
+            <p>Our R&D team develops tailored polyol and isocyanate systems to meet your specific processing requirements and performance criteria. From concept to production, we work closely with customers to create unique formulations.</p>
+            <div class="product-specs">
+              <h4>Our Capabilities</h4>
+              <div class="spec-grid">
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Custom Density Ranges</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Fire Retardant Grades</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Eco-Friendly Options</span></div>
+                <div class="spec-item"><i class="bi bi-check-circle"></i><span>Processing Support</span></div>
+              </div>
+            </div>
+            <div class="product-applications">
+              <h4>Industries Served</h4>
+              <div class="app-tags">
+                <span class="app-tag">Automotive</span>
+                <span class="app-tag">Construction</span>
+                <span class="app-tag">Electronics</span>
+                <span class="app-tag">Furniture</span>
+                <span class="app-tag">Packaging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Need Help Choosing the Right Material?</h2>
+        <p>Our technical team can help you select or develop the perfect PU system.</p>
+        <a href="contact.html" class="cta-btn">Contact Technical Team</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">IF Chemical</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>AOS.init();</script>
+</body>
+
+</html>
